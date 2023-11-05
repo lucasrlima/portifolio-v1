@@ -1,0 +1,32 @@
+.footer {
+    background-color: #F7F6F6;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1vh;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: #9c9c9c;
+    font-size: 24px;
+}
+
+.footer .social-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 20px 10px 20px;
+    padding-right: 6vw;
+}
+
+.footer .social-container a{
+    padding: 0px 20px 0px 10px; 
+}
+
+.footer a:hover {
+    color: black;
+}

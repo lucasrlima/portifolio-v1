@@ -1,0 +1,77 @@
+.fotos-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    width: 60vh;
+    height: 36vh;
+    transition: filter 0.3s;
+    filter: grayscale(30%)
+}
+
+.reportage {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/TOURO.jpg");
+}
+
+.portraits {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/charlotte.jpeg");
+}
+
+.rio2016 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/rio2016/panning.jpeg");
+}
+
+.politicians {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/serra.jpg");
+}
+
+.athlete {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/story/esquiva7.jpg");
+}
+
+.fragments {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/reportage/fragmento6.jpeg");
+}
+
+.fotos-card:hover {
+    filter: grayscale(0%); /* Apply the grayscale filter on hover */
+}
+
+.fotos-card a{
+    text-decoration: none;
+}
+
+.fotos-card-text {
+    display: flex;
+    justify-content: center;
+}
+
+.fotos-card-text h2{
+    color: whitesmoke;
+    font-family: Poppins;
+}
+
+@media(max-width: 1000px) {
+    
+    .fotos-card {
+        width: 45vh;
+        height: 30vh; 
+    }
+}
+
+@media(max-width: 768px) {
+    .fotos-card {
+        margin-top: 2vh;
+    }
+    .fotos-card {
+        width: 45vh;
+        height: 30vh; 
+    }
+}
+
+@media(max-width: 488px) {
+    .fotos-card {
+        width: 50vh; 
+    }
+}

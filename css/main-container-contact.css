@@ -1,0 +1,53 @@
+.main-container-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 70vh;
+}
+
+#icons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 20vw;
+    margin-left: 25vw;
+    align-items: center;
+}
+
+#contact-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    align-items: center;
+    margin-left: 4vw;
+    text-align: justify;
+}
+
+#icons-container .skill-card img {
+    height: 4vw;
+}
+
+#contact-text-container h1 {
+    color: #D12429;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600; 
+}
+
+@media(max-width: 992px) {
+    .main-container-contact {
+      grid-template-columns: 1fr;
+      width: 80vh;
+    }
+
+    #icons-container {
+        width: 80vw;
+        margin-top: 6vh;
+        margin-left: 22vw;
+    }
+
+    #contact-text-container {
+        width: 80vw;
+        margin-left: 8vw;
+    }
+
+  }

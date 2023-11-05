@@ -1,0 +1,59 @@
+.header-navbar {
+    font-family: Poppins;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 24px;
+    height: 8vh;
+    /*position: fixed;*/
+    width: 100%;
+    position: relative;
+}
+
+.header-navbar a {
+    text-decoration: none;
+    color: black;
+    padding-right: 42px;
+
+}
+
+.header-navbar a:hover {
+    color: #9c9c9c;;
+
+}
+
+.header-navbar img{
+    width: 7vh;
+    position: absolute;
+    left: 60px;
+    top: 0;
+}
+
+#about-link.active {
+    color: #D12429;
+}
+
+#resume-link.active {
+    color: #D12429;
+}
+
+#contact-link.active {
+    color: #D12429;
+}
+
+#fotos-link.active {
+    color: #D12429;
+}
+
+@media(max-width: 500px) {
+
+    .header-navbar img{
+        left: 16px;
+        top:4px;
+    }
+
+    .header-navbar a{
+        padding-right: 12px;
+    }
+}

@@ -1,0 +1,18 @@
+.dotted-line-container {
+    width: 90vw; /* Set the desired width for your dotted line container */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Create a positioning context for the pseudo-element */
+    margin-top: 5px;
+}
+
+/* Add the dotted line within the container */
+.dotted-line-container::before {
+    content: "";
+    display: block;
+    border-top: 1px dotted #000000; /* Change the color to your desired dotted line color */
+    position: absolute;
+    top: 50%; /* Position the line vertically in the middle */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Center the line vertically */
+}

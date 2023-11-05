@@ -1,0 +1,54 @@
+.xp-card {
+    display: flex;
+    width: 32vw;
+    height: 24vh;
+    align-items: center;
+    text-align: justify;
+    
+}
+
+.xp-date,
+.xp-company,
+.xp-role {
+    margin-bottom: -10px; 
+}
+
+.xp-card img{
+    width: 4vw;
+    height: fit-content;
+    margin-right: 12px;
+    max-height: 60px;
+    object-fit: scale-down; /* Maintain aspect ratio and cover the container */
+}
+
+.xp-date p {
+    font-weight: 200;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.xp-company p {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #D12429;
+}
+
+
+
+@media(max-width: 992px) {
+    .xp-card { 
+        width: 80vw
+    }
+
+    .xp-card img{
+        width: 8vw;
+    }
+  }
+  
+@media(max-width: 700px) {
+    .xp-card img {
+        height: 24px;
+        width: 24px;
+    }
+  }

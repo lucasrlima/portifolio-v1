@@ -1,0 +1,43 @@
+.main-container-fotos {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 2px;
+    grid-auto-rows: auto;
+    align-items:flex-start;    
+    margin-top: 10px;
+    margin-left: 1vw;
+    
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img{
+    width: 22vw;
+    height: auto;
+    display: block;
+}
+
+
+.gallery {
+    
+}@media(max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+
+
+    .gallery a img{
+        width: 80vw;
+    }
+
+}

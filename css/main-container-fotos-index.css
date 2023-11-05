@@ -1,0 +1,24 @@
+.main-container-fotos-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16vw 12vh 20vw;
+    padding-top: 1vh;
+    
+}
+
+.main-container-fotos-index a {
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    .main-container-fotos-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 120vh;
+        margin: 0 16vw 85vh 20vw;
+    }
+    
+}

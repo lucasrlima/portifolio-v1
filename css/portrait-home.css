@@ -1,0 +1,22 @@
+#portrait-home {
+    height: 30vh;
+    border-radius: 50px;
+    box-shadow: 2px 2px 6px rgb(124, 124, 124);
+}
+
+
+@media(max-width: 768px) {
+  
+    #portrait-home {
+    height: 22vh;
+    border-radius: 32px;
+    margin-top: -16px;
+    }
+  }
+
+  @media(max-width: 1148px) {
+    #portrait-home {
+        height: 16vh;
+        border-radius: 50px;
+        }
+    }

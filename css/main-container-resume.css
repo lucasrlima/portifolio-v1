@@ -1,0 +1,41 @@
+.main-container-resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container-resume h1 {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;    
+}
+
+.main-container-resume h2 {
+    color: #3a3a3a;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600; 
+}
+
+@media(max-width: 992px) {
+    .main-container-resume {
+      grid-template-columns: 1fr;
+    }
+  }

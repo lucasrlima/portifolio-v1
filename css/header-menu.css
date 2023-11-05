@@ -1,0 +1,24 @@
+.header-menu {
+    font-family: Poppins;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 24px;
+    height: 8vh;
+    /*position: fixed;*/
+    width: 100%;
+    
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: black;
+    padding-right: 42px;
+
+}
+
+.header-menu a:hover {
+    color: #9c9c9c;
+
+}

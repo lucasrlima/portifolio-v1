@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@200;600;700&display=swap');
+@import url("../css/header-menu.css");
+@import url("../css/portrait-home.css");
+@import url("../css/logo-title.css");
+@import url("../css/footer.css");
+@import url("../css/gray-button.css");
+@import url("../css/black-button.css");
+@import url("../css/dotted-line-container.css");
+@import url("../css/main-container-home.css");
+@import url("../css/header-navbar.css");
+@import url("../css/main-container-fotos.css");
+@import url("../css/main-container-photo.css");
+@import url("../css/main-container-about.css");
+@import url("../css/main-container-resume.css");
+@import url("../css/main-container-contact.css");
+@import url("../css/skills-container.css");
+@import url("../css/main-container-fotos-index.css");
+@import url("../css/xp-card.css");
+@import url("../css/fotos-card.css");
+@import url("../css/skill-card.css");
+@import url("../css/gallery.css");
+@import url("../css/alert-modal.css");
+@import url("../css/navbar.css");
+
+body {
+    background-color: #F7F6F6;
+}
+
+p {
+    font-family: Open Sans;
+    font-size: 12.5px;
+}
+
+
+.headline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    text-align: justify;
+}
+
+.headline-container p {
+    padding-bottom: 12px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 92px;
+    padding-bottom: 60px;
+}
+
+  
+@media(max-width: 768px) {
+  
+  .headline-container {
+    width: 95%;
+    margin-top: -60px;
+  }
+
+  .profile-container {
+    justify-content: center;
+    padding-right: 1px;
+    padding-bottom: 1px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+
+  .headline-container {
+    width: 95%;
+  }
+  
+  
+  .profile-container {
+    justify-content: center;
+    padding-right: 1px;
+    padding-bottom: 1px;
+  }
+}

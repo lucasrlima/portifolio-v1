@@ -1,0 +1,58 @@
+.main-container-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    justify-content: center;
+    height: 76vh;
+    padding: 20px;
+    position: relative; /* DISABLE TO MAKE THE BACKGROUND COVER THE WHOLE SCREEN */
+    margin-right: 4vw;
+    margin-left: 5vw;
+    padding-right: 176px;
+}
+
+.main-container-home:before {
+    content: "";
+    background-image: url("../images/helsinki.png");
+    opacity: 0.2; /* Adjust the opacity value as needed */
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+  }
+  
+  @media(max-width: 1148px) {
+    .main-container-home {
+      padding-right: 48px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .main-container-home {
+      grid-template-columns: 1fr;
+      margin-right: 2vw;
+      margin-left: 2vw;
+      padding-right: 4px;
+      height: 78vh;
+      padding-top: 0;
+    }
+
+    .main-container-home #logo-title {
+        src: url(/images/LL_vert.png);
+        width: 25vw;
+    }
+
+    .headline-container {
+      width: 95%;
+    }
+
+  }
+
+  
