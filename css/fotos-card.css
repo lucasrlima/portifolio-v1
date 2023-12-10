@@ -1,13 +1,27 @@
 .fotos-card {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    
     background-size: cover;
-    width: 60vh;
-    height: 36vh;
+    max-width: 34vh;
+    min-height: 46vh;
     transition: filter 0.3s;
-    filter: grayscale(30%)
+    filter: grayscale(99%);
+    margin-bottom: 1.5vh;
+    margin-left: 0.8vw;
+    border-radius: 4px;
+}
+
+.foto-portfolio {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/port-foto.jpg");
+}
+
+.calc {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/calculator_js.jpg");
+}
+
+.password {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/password-gen.jpg");
 }
 
 .reportage {
@@ -35,7 +49,7 @@
 }
 
 .fotos-card:hover {
-    filter: grayscale(0%); /* Apply the grayscale filter on hover */
+    filter: grayscale(16%); /* Apply the grayscale filter on hover */
 }
 
 .fotos-card a{
@@ -50,28 +64,35 @@
 .fotos-card-text h2{
     color: whitesmoke;
     font-family: Poppins;
+    font-weight: 200;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.778);
+    padding: 0 1vw 0 1vw;
+    border-radius: 4px;
+    position: relative;
+    top: 12px;
 }
 
-@media(max-width: 1000px) {
+
+@media(max-width: 1090px) {
     
     .fotos-card {
-        width: 45vh;
-        height: 30vh; 
+        min-width: 42vw;
+        height: 40vw;
+        margin-right: 1vw;
     }
 }
 
 @media(max-width: 768px) {
+   
     .fotos-card {
-        margin-top: 2vh;
+        width: 30vw;
+        height: 20vh; 
     }
-    .fotos-card {
-        width: 45vh;
-        height: 30vh; 
+
+    .fotos-card-text h2{
+        font-size: 0.8rem;
+        
     }
 }
 
-@media(max-width: 488px) {
-    .fotos-card {
-        width: 50vh; 
-    }
-}
