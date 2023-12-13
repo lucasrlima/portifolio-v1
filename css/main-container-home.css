@@ -4,11 +4,13 @@
     align-items: center;
     justify-content: center;
     height: 76vh;
+    width: fit-content;
     padding: 20px;
     position: relative; /* DISABLE TO MAKE THE BACKGROUND COVER THE WHOLE SCREEN */
     margin-right: 4vw;
     margin-left: 5vw;
     padding-right: 176px;
+    overflow: hidden;
 }
 
 .main-container-home:before {
