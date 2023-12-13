@@ -3,12 +3,12 @@
     font-weight: 200;
     font-size: 15px;
     border: solid thin;
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 8px 12px 8px 12px;
     text-align: center;
     text-decoration: none;
-    color: black;
-    width: 152px;
+    color: rgb(110, 110, 110);
+    width: 140px;
     background-color: #eeeeee;
 }
 
