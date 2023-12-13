@@ -1,25 +1,35 @@
 .main-container-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: fit-content;
+    padding-top: 12vh;
+    padding-bottom: 4vh;
+}
+
+.main-container-contact a{
+    color: #000000;
 }
 
 #icons-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 20vw;
-    margin-left: 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
     align-items: center;
+    border-bottom: dotted 1px #696969;
+    padding-bottom: 2vh;
 }
 
 #contact-text-container {
     display: flex;
     flex-direction: column;
-    width: 24vw;
+    width: 30vw;
     align-items: center;
-    margin-left: 4vw;
     text-align: justify;
+    background-color: rgb(237, 237, 237);
+    padding-right: 2vw;
+    padding-left: 2vw;
+    border-radius: 4px;
 }
 
 #icons-container .skill-card img {
@@ -27,27 +37,46 @@
 }
 
 #contact-text-container h1 {
-    color: #D12429;
+    color: #000000;
     font-family: Poppins;
-    font-size: 24px;
-    font-weight: 600; 
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#contact-text-container p {
+    color: #575757;
 }
 
 @media(max-width: 992px) {
-    .main-container-contact {
-      grid-template-columns: 1fr;
-      width: 80vh;
-    }
-
-    #icons-container {
-        width: 80vw;
-        margin-top: 6vh;
-        margin-left: 22vw;
-    }
-
     #contact-text-container {
-        width: 80vw;
-        margin-left: 8vw;
+        width: 76vw;
+        
+    }
+
+  }
+
+  @media(max-width: 690px) {
+    
+    #icons-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .skill-card {
+        padding-right: 4vw;
+        padding-left: 4vw;
+        padding-bottom: 2vw;
+    }
+
+  }
+  
+  @media(max-width: 380px) {
+    
+    #icons-container {
+        min-width: 150px;
+
     }
 
   }
