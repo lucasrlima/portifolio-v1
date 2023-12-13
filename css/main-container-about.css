@@ -10,6 +10,7 @@
 
 #about-photo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -20,6 +21,10 @@
     position: relative;
     left: 7vw;
     top: -5vh;
+}
+
+#about-photo a {
+    margin-left: 14vw;
 }
 
 #text a:hover {
