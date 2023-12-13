@@ -76,6 +76,27 @@
     
     <script src="js/lock-scroll.js"></script>
 
+    <script>
+      $(document).ready(function() {
+        // Fade in the body when the document is ready
+        $("body").fadeIn();
+  
+        // Click event to navigate to a random page with a fade-out effect
+        $("container-home").on("click", function() {
+          var randomPage = getRandomPage(["index.html", "about.html", "contact.html", "resume.html"]);
+          $("body").fadeOut(function() {
+            window.location.href = randomPage;
+          });
+        });
+  
+        // Function to get a random page from an array
+        function getRandomPage(pages) {
+          var randomIndex = Math.floor(Math.random() * pages.length);
+          return pages[randomIndex];
+        }
+      });
+    </script>
+
 </body>
 </html>
 

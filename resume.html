@@ -11,13 +11,12 @@
 <body>
     
     <div class="header-navbar">
-      <a href="index.html"><img src="images/LL_mobile.png" alt="Lucas Lima"></a>
-      
-      <a id="resume-link" href="resume.html">Resume</a>
-      <a id="about-link" href="about.html">About</a>
-      <a id="contact-link"href="contact.html">Contact</a>
-      <a id="fotos-link" href="fotos-index.html">Fotos</a>     
-    </div>
+        <a href="index.html"><img src="images/LL_mobile.png" alt="Lucas Lima"></a>
+        
+        <a id="resume-link" href="resume.html">Resume</a>
+        <a id="about-link" href="about.html">About</a>
+        <a id="fotos-link" href="projects-index.html">Projects</a>     
+      </div>
 
     <div class="main-container-resume">
         
@@ -257,6 +256,27 @@
     </div>
 
     <script src="js/menu-item-red-resume.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          // Fade in the body when the document is ready
+          $("body").fadeIn();
+    
+          // Click event to navigate to a random page with a fade-out effect
+          $("container-home").on("click", function() {
+            var randomPage = getRandomPage(["index.html", "about.html", "contact.html", "projects-index.html"]);
+            $("body").fadeOut(function() {
+              window.location.href = randomPage;
+            });
+          });
+    
+          // Function to get a random page from an array
+          function getRandomPage(pages) {
+            var randomIndex = Math.floor(Math.random() * pages.length);
+            return pages[randomIndex];
+          }
+        });
+      </script>
 
 </body>
 </html>
