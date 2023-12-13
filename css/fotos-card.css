@@ -20,6 +20,10 @@
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/calculator_js.jpg");
 }
 
+.tic-tac {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/tic-tac.jpg");
+}
+
 .password {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/portfolio/password-gen.jpg");
 }
